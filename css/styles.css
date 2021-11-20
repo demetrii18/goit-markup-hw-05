@@ -100,12 +100,14 @@ header {
   color: var(--accent-color);
 }
 
-.site-nav .curr {
+.link.current::after {
+  content: '';
+
   position: absolute;
   width: 100%;
   height: 4px;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 
   background-color: var(--accent-color);
   border-radius: 2px;
@@ -339,6 +341,16 @@ header {
   display: inline-flex;
 }
 
+.item .description {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
 .item .descr-text {
   padding: 27px 82px;
 
@@ -348,20 +360,6 @@ header {
   text-transform: uppercase;
 
   color: var(--primary-white-color);
-}
-
-/* .item .image {
-  display: inline-flex;
-} */
-
-.item .description {
-  position: absolute;
-  width: 100%;
-  height: 70px;
-  left: 0;
-  bottom: 0;
-
-  background: rgba(47, 48, 58, 0.8);
 }
 
 /* Настройка секции "Наша команда" */
@@ -677,6 +675,9 @@ header {
 }
 
 .link > .posters {
+  position: relative;
+
+  display: inline-flex;
   margin-bottom: 20px;
 }
 
@@ -690,6 +691,42 @@ header {
   padding-left: 24px;
 }
 
+.posters-descr > .posters {
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+
+.posters-descr > .title {
+  margin-bottom: 2px;
+  padding-left: 24px;
+}
+
+.posters-descr > .text {
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
+.link .posters::before {
+  content: '';
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.link .posters:hover::before {
+  opacity: 1;
+}
+/* .item .link:hover::before {
+  opacity: 1;
+} */
+
+/* Описание и расположение блока "Присоединяйтесь" */
 .join-us {
   padding: 72px 0 100px 70px;
 }
