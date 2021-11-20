@@ -719,12 +719,22 @@ header {
   background: rgba(33, 150, 243, 0.9);
 }
 
-.link .posters:hover::before {
+.posters .posters-descr-text {
+  position: absolute;
+
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  opacity: 0;
+
+  color: var(--primary-white-color);
+}
+
+.item .link:hover .posters::before,
+.item .link:hover .posters-descr-text {
   opacity: 1;
 }
-/* .item .link:hover::before {
-  opacity: 1;
-} */
 
 /* Описание и расположение блока "Присоединяйтесь" */
 .join-us {
