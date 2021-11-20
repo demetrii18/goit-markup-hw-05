@@ -658,6 +658,7 @@ header {
 }
 
 .link {
+  position: relative;
   text-decoration: none;
 }
 
