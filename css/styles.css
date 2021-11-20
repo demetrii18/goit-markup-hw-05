@@ -334,6 +334,36 @@ header {
   margin-right: 30px;
 }
 
+.our-work .item {
+  position: relative;
+  display: inline-flex;
+}
+
+.item .descr-text {
+  padding: 27px 82px;
+
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+/* .item .image {
+  display: inline-flex;
+} */
+
+.item .description {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
 /* Настройка секции "Наша команда" */
 .our-team {
   display: flex;
