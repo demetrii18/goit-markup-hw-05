@@ -635,7 +635,14 @@ header {
   flex-direction: column;
   width: 370px;
   background: var(--primary-white-color);
-  border: 1px solid #eeeeee;
+}
+
+.link .posters-text {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+  padding-top: 20px;
 }
 
 .filter .item:hover,
@@ -679,15 +686,15 @@ header {
   position: relative;
 
   display: inline-flex;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
-.link > .title {
+.posters-text > .title {
   margin-bottom: 2px;
   padding-left: 24px;
 }
 
-.link > .text {
+.posters-text > .text {
   padding-bottom: 20px;
   padding-left: 24px;
 }
