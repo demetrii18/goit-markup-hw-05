@@ -700,21 +700,6 @@ header {
   padding-left: 24px;
 }
 
-.posters-descr > .posters {
-  display: inline-flex;
-  margin-bottom: 20px;
-}
-
-.posters-descr > .title {
-  margin-bottom: 2px;
-  padding-left: 24px;
-}
-
-.posters-descr > .text {
-  padding-bottom: 20px;
-  padding-left: 24px;
-}
-
 .link .posters::before {
   content: '';
 
