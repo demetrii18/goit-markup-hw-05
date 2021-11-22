@@ -139,6 +139,8 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item > .link:hover,
@@ -161,6 +163,8 @@ header {
   height: 12px;
   margin-right: 10px;
   fill: var(--primary-text-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel-icon {
@@ -168,6 +172,8 @@ header {
   height: 16px;
   margin-right: 10px;
   fill: var(--primary-text-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .contact-nav .mail-icon:hover,
@@ -205,8 +211,6 @@ header {
 }
 /* Настройка отображения кнопок */
 .button {
-  /* display: flex;
-  align-items: center; */
   text-align: center;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -224,6 +228,9 @@ header {
   margin: 0 auto;
   width: 200px;
   height: 50px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -247,6 +254,10 @@ header {
   border: none;
   box-shadow: none;
   border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
@@ -422,6 +433,9 @@ header {
   height: 44px;
   background-size: contain;
   border-radius: 50%;
+  background-color: var(--primary-white-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-team {
@@ -429,6 +443,8 @@ header {
   height: 20px;
   margin: 12px;
   fill: rgba(175, 177, 184, 1);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .colladge .item:not(:last-child) {
@@ -464,10 +480,14 @@ header {
   color: var(--primary-icon-color);
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon {
   fill: rgba(175, 177, 184, 1);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon.group1 {
@@ -575,6 +595,11 @@ header {
   text-decoration: none;
 }
 
+.address .link:hover,
+.address .link:focus {
+  color: var(--primary-white-color);
+}
+
 .address {
   display: inline-block;
   font-style: normal;
@@ -593,6 +618,50 @@ header {
 .address > .item {
   margin-bottom: 8px;
 }
+
+/* Описание и расположение блока "Присоединяйтесь" */
+.join-us {
+  padding: 72px 0 100px 70px;
+}
+
+.join-us > .title {
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.colladge-join {
+  display: flex;
+  padding-left: 0;
+}
+
+.colladge-join .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-join {
+  display: flex;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-join {
+  width: 20px;
+  height: 20px;
+  margin: 12px;
+  fill: var(--primary-white-color);
+}
+
+.link-join:hover,
+.link-join:focus {
+  background-color: var(--accent-color);
+}
+
 /* Контент вкладки "Портфолио" */
 .filter-buttons {
   display: flex;
@@ -619,6 +688,9 @@ header {
 .filter .item {
   margin-right: 30px;
   margin-bottom: 30px;
+  box-shadow: none;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter .item:nth-child(3n) {
@@ -712,7 +784,7 @@ header {
 
   background: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
+  transform: translateY(calc(100% + 1px));
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -737,49 +809,4 @@ header {
 .item .link:hover .posters::before,
 .item .link:hover .posters-descr-text {
   transform: translateY(0);
-}
-
-/* Описание и расположение блока "Присоединяйтесь" */
-.join-us {
-  padding: 72px 0 100px 70px;
-}
-
-.join-us > .title {
-  font-weight: 700;
-  line-height: 16px;
-  text-transform: uppercase;
-
-  color: var(--primary-white-color);
-  margin-bottom: 20px;
-}
-
-.colladge-join {
-  display: flex;
-  padding-left: 0;
-}
-
-.colladge-join .item {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-}
-
-.colladge-join .item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.link-join {
-  display: flex;
-}
-
-.icon-join {
-  width: 20px;
-  height: 20px;
-  margin: 12px;
-  fill: var(--primary-white-color);
-}
-
-.link-join:hover,
-.link-join:focus {
-  background-color: var(--accent-color);
-  border-radius: 50%;
 }
