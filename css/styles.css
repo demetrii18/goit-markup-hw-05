@@ -807,6 +807,8 @@ header {
 }
 
 .item .link:hover .posters::before,
-.item .link:hover .posters-descr-text {
+.item .link:hover .posters-descr-text,
+.item .link:focus .posters::before,
+.item .link:focus .posters-descr-text {
   transform: translateY(0);
 }
