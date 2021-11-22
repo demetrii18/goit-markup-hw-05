@@ -840,3 +840,24 @@ header {
 
   background-color: var(--primary-white-color);
 }
+
+.close-botton {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  display: flex;
+  margin-left: auto;
+  margin-top: 8px;
+  margin-right: 8px;
+  padding: 0;
+}
+
+.close-icon {
+  width: 11px;
+  height: 11px;
+  fill: #000000;
+}
